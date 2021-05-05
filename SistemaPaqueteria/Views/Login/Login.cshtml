@@ -11,23 +11,41 @@
 
 </head>
 <body>
-    <div id="container">
-        <form>
-            <!-- Username -->
-            <label for="name">Username:</label>
-            <input type="name">
-            <!-- Password -->
-            <label for="username">Password:</label>
-            <p>
-                <a href="#">Forgot your password?</a>
-                <input type="password">
-                <div id="lower">
-                    <input type="checkbox"><label class="check" for="checkbox">Keep me logged in</label>
-                    <!-- Submit Button -->
-                    <input type="submit" value="Login">
+
+    <section class="login_box_area section_gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="login_box_img">
+                        <img class="img-fluid" src="~/Assets/img/login.jpg" alt="">
+                        <div class="hover">
+                            <h4>¿Eres nuevo?</h4>
+                            <p>Quédate con nosotros y descubre las ventajas que te pueden interesar</p>
+                            <a class="primary-btn" href="@Url.Action("Registro", "Inicio")">Crear una cuenta</a>
+                        </div>
+                    </div>
                 </div>
-        </form>
-    </div>
+                <div class="col-lg-6">
+                    <div class="login_form_inner">
+                        <h3>Inicio de sesión</h3>
+                        <form class="row login_form needs-validation" id="loginForm" novalidate>
+                            <div class="col-md-12 form-group">
+                                <input type="email" class="form-control" id="cCorreo" name="cCorreo" placeholder="Correo" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <input type="password" class="form-control" id="cContrasenia" name="cContrasenia" placeholder="Contraseña" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <button id="btnLogin" class="primary-btn">Iniciar sesión</button>
+                            </div>
+                            <div><a href="#">¿Olvidaste tu contraseña?</a></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
 
