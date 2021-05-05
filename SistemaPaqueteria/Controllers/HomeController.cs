@@ -15,14 +15,14 @@ namespace SistemaPaqueteria.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Rastreo de envios";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Acceso al sistema.";
 
             return View();
         }
