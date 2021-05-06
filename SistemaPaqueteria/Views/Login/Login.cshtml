@@ -7,21 +7,21 @@
 <html>
 <head>
 
-    <title>Login</title>
+    <title>Inicio de sesion</title>
 
 </head>
 <body>
 
     <section class="login_box_area section_gap">
-        <div class="container">
+        <div class="container" >
             <div class="row">
                 <div class="col-lg-6">
                     <div class="login_box_img">
-                        <img class="img-fluid" src="~/Assets/img/login.jpg" alt="">
+                        <img class="img-fluid" src="" alt="">
                         <div class="hover">
                             <h4>¿Eres nuevo?</h4>
-                            <p>Quédate con nosotros y descubre las ventajas que te pueden interesar</p>
-                            <a class="primary-btn" href="@Url.Action("Registro", "Inicio")">Crear una cuenta</a>
+                            <p>Contactanos para hacer uso de nuestros servicios.</p>
+                            <a class="primary-btn" href="@Url.Action("Registro", "Inicio")">Contactar</a>
                         </div>
                     </div>
                 </div>
@@ -30,10 +30,10 @@
                         <h3>Inicio de sesión</h3>
                         <form class="row login_form needs-validation" id="loginForm" novalidate>
                             <div class="col-md-12 form-group">
-                                <input type="email" class="form-control" id="cCorreo" name="cCorreo" placeholder="Correo" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
+                                <input type="email" class="form-control" id="cCorreo" name="cCorreo" placeholder="Usuario" onfocus="this.placeholder = ''" onblur="this.placeholder = 'USUARIO'">
                             </div>
                             <div class="col-md-12 form-group">
-                                <input type="password" class="form-control" id="cContrasenia" name="cContrasenia" placeholder="Contraseña" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
+                                <input type="password" class="form-control" id="cContrasenia" name="cContrasenia" placeholder="Contraseña" onfocus="this.placeholder = ''" onblur="this.placeholder = 'CONTRASEÑA'">
                             </div>
                             <div class="col-md-12 form-group">
                                 <button id="btnLogin" class="primary-btn">Iniciar sesión</button>
