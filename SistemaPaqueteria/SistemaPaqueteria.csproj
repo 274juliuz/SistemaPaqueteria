@@ -168,12 +168,16 @@
     <Content Include="Assets\js\sweetalert2.min.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="img\guia_Mesa-de-trabajo-1.png" />
     <Content Include="img\img1.jpeg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="img\img2.jpeg" />
     <Content Include="img\logo_plano.png" />
     <Content Include="Assets\spanish.json" />
+    <Content Include="img\oportuno_Mesa-de-trabajo-1.png" />
+    <Content Include="img\rastreo_Mesa-de-trabajo-1.png" />
+    <Content Include="img\seguro_2.png" />
     <Content Include="Models\DB.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>DB.edmx</DependentUpon>
