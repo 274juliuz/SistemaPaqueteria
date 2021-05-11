@@ -12,11 +12,11 @@
     <nav class="navbar fixed-top navbar-light bg-dark">
         <div class="container">
             <div class="navbar-header">
-                @Html.ActionLink("LogPack", "Index", "Home", new { area = "" }, new { @class = "navbar-brand white" })
+                @Html.ActionLink("LogPack", "Index", "Home", new { area = "" }, new { @class = "btn btn-dark" })
             </div>
-            <button button type="button" class="btn btn-dark">@Html.ActionLink("Rastreo", "About", "Home")</button>
-            <button button type="button" class="btn btn-dark">@Html.ActionLink("Sucurssales", "Contact", "Home")</button>
-            <button button type="button" class="btn btn-dark">@Html.ActionLink("Iniciar Sesion", "Login", "Login")</button>
+            <button button type="button" class="btn btn-dark">@Html.ActionLink("Rastreo", "About", "Home", new { area = "" }, new { @class = "btn btn-dark" })</button>
+            <button button type="button" class="btn btn-dark">@Html.ActionLink("Sucursales", "Contact", "Home", new { area = "" }, new { @class = "btn btn-dark" })</button>
+            <button button type="button" class="btn btn-dark">@Html.ActionLink("Iniciar Sesion", "Login", "Login", new { area = "" }, new { @class = "btn btn-dark" })</button>
 
         </div>
     </nav>
