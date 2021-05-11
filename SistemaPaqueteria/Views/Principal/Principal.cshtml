@@ -1,0 +1,58 @@
+﻿@model List<SistemaPaqueteria.Models.DTO.ClientesDTO>
+
+@{
+    ViewBag.Title = "Principal";
+}
+
+<h2>Principal</h2>
+
+<div class="row">
+    <div class="col-md-12">
+        <table id="Clientes">
+            <tr>
+                <th>IdCliente</th>
+                <th>Rfc</th>
+                <th>Moral Fisica</th>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Cliente Facturacion</th>
+                <th>Tipo Cliente</th>
+                <th>Corre Electronico</th>
+                <th>Direccion</th>
+                <th>Telefono</th>
+                <th>Codigo Postal</th>
+                <th>Colonia</th>
+                <th>Usuario</th>
+                <th>Contraseña</th>
+                <th>Metodo Pago Especial</th>
+            </tr>
+            @foreach (var oElemento in Model)
+            {
+                <tr>
+                    <td>@oElemento.iIdCliente</td>
+                    <td>@oElemento.cRfc</td>
+                    <td>@oElemento.cMoralFisica</td>
+                    <td>@oElemento.cNombres</td>
+                    <td>@oElemento.cApellidos</td>
+                    <td>@oElemento.iClienteFacturazion</td>
+                    <td>@oElemento.iTipoCliente</td>
+                    <td>@oElemento.cCorreoElectronico</td>
+                    <td>@oElemento.cDireccion</td>
+                    <td>@oElemento.nTelefono</td>
+                    <td>@oElemento.iCp</td>
+                    <td>@oElemento.cColonia</td>
+                    <td>@oElemento.cUsuario</td>
+                    <td>@oElemento.cContraseña</td>
+                    <td>@oElemento.iMetodoPagoEspecial</td>
+                </tr>
+            }
+        </table>
+
+    </div>
+
+</div>
+
+@section scripts{
+
+    <script src="~/Assets/js/DataTableClientes.js"></script>
+}
