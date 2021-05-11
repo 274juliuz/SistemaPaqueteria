@@ -4,11 +4,17 @@
     ViewBag.Title = "Principal";
 }
 
-<h2>Principal</h2>
+<br />
+<br />
+<br />
+
+<div>
+    <a href="" class="btn btn-primary">Nuevo</a>
+</div>
 
 <div class="row">
     <div class="col-md-12">
-        <table id="Clientes">
+        <table class="table" id="Clientes">
             <tr>
                 <th>IdCliente</th>
                 <th>Rfc</th>
@@ -46,13 +52,12 @@
                     <td>@oElemento.iMetodoPagoEspecial</td>
                 </tr>
             }
+
         </table>
 
     </div>
 
 </div>
 
-@section scripts{
 
-    <script src="~/Assets/js/DataTableClientes.js"></script>
-}
+@Scripts.Render("~/js/DataTableClientes.js")

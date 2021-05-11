@@ -158,9 +158,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\css\bootstrap.min.css" />
+    <Content Include="Assets\css\datatables.css" />
+    <Content Include="Assets\css\datatables.min.css" />
     <Content Include="Assets\css\site.css" />
     <Content Include="Assets\js\bootstrap.bundle.js" />
     <Content Include="Assets\js\DataTableClientes.js" />
+    <Content Include="Assets\js\datatables.js" />
     <Content Include="Assets\js\datatables.min.js" />
     <Content Include="Assets\js\jquery-3.6.0.min.js" />
     <Content Include="Assets\js\jquery.validate.min.js" />

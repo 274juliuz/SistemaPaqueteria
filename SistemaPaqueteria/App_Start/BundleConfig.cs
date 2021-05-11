@@ -28,7 +28,9 @@ namespace SistemaPaqueteria
             /// librerias css
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Assets/css/bootstrap.min.css",
+                      "~/Assets/css/datatables.min.css",
                       "~/Assets/css/site.css"));
+
         }
     }
 }
